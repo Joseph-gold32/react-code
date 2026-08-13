@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eef0ff;
+  color: #101010;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  border: 0;
+  text-align: left;
+}
+
+.latest-news {
+  min-height: 100vh;
+  background: #eef0ff;
+  padding: 46px 20px 28px;
+  position: relative;
+}
+
+.news-wrap {
+  width: min(812px, 100%);
+  margin: 0 auto;
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.news-header h1 {
+  color: #03071f;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.read-more {
+  border: 0;
+  border-radius: 999px;
+  background: #062894;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  min-width: 92px;
+  padding: 13px 20px;
+  transition-property: all;
+
+  }
+  .read-more:hover{
+    background-color:green;
+    color: white;
+    transition: 2s0;
+  }
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.news-card {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.news-card img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.container {
+  padding: 23px 14px 18px;
+}
+
+.container h2 {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.55;
+  margin: 0 0 11px;
+  border-radius: 20px;
+}
+
+.news-date {
+  color: #f0645b;
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.news-text {
+  color: #3f3b4f;
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.chat-widget {
+  align-items: center;
+  background: #ffffff;
+  border: 0;
+  bottom: 0;
+  color: #1f2937;
+  display: flex;
+  font-size: 9px;
+  gap: 10px;
+  left: 0;
+  padding: 7px 14px 7px 5px;
+  position: fixed;
+}
+
+.chat-icon {
+  align-items: center;
+  background: #21bd54;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  color: transparent;
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 42px;
+}
+
+.chat-icon::before {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  content: "";
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+.chat-icon::after {
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  bottom: 10px;
+  content: "";
+  height: 7px;
+  left: 12px;
+  position: absolute;
+  transform: rotate(-28deg);
+  width: 7px;
+}
+
+.todo-section {
+  width: min(760px, 100%);
+  margin: 36px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.todo-section h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.todo-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.todo-input {
+  flex: 1 1 240px;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 14px;
+  color: white;
+}
+.todo::placeholder{
+  color: blue;
+  
+}
+.todo-button:hover{
+  background-color: black;
+  
+}
+
+.todo-button {
+  padding: 12px 22px;
+  background: #062894;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.todo-delete-button {
+  padding: 12px 22px;
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.todo-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-list-wrapper {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 18px;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border-radius: 12px;
+  color: #0f172a;
+}
+
+.no-todos {
+  margin: 0;
+  color: #475569;
+}
+
+@media (max-width: 800px) {
+  .latest-news {
+    padding-top: 34px;
+  }
+
+  .news-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-card img {
+    height: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-header h1 {
+    font-size: 26px;
+  }
+
+  .read-more {
+    width: 100%;
+  }
+
+  .news-card img {
+    height: 180px;
+  }
+
+  .chat-widget span:last-child {
+    display: none;
+  }
+} 
+
+
+

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1785947235113",
+    "price": 30,
+    "category": "book",
+    "description": "jffffff",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnH9E488gExFUOMfq9grL-BVBheMiSSSWUFv7VveKWpw&s=10",
+    "createdAt": "2026-08-05T16:27:15.113Z"
+  },
+  {
+    "id": "1785947056633",
+    "price": 99.99,
+    "category": "Electronics",
+    "description": "Test product from PowerShell",
+    "imageUrl": "https://example.com/image.jpg",
+    "createdAt": "2026-08-05T16:24:16.633Z"
+  }
+]

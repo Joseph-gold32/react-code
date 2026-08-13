@@ -1,0 +1,39 @@
+body {
+  background: #eef0ff;
+  color: #101010;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  border: 0;
+  text-align: left;
+}
+
+.latest-news {
+  min-height: 100vh;
+  background: #eef0ff;
+  padding: 46px 20px 28px;
+  position: relative;
+}
+
+.news-wrap {
+  width: min(812px, 100%);
+  margin: 0 auto;
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.news-header h1 {
+  color: #03071f;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
